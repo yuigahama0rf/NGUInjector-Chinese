@@ -282,14 +282,16 @@ namespace NGUInjector.Managers
             int maxZone = Array.BinarySearch(ZoneUnlocks, _character.effectiveBossID());
             if (maxZone < 0)
                 maxZone = -maxZone - 2;
+            else if (ZoneUnlocks.Length > maxZone + 1 && ZoneUnlocks[maxZone + 1] >= effectiveBoss)
+                maxZone++;
 
-            for (int i = maxZone; i >= 0; i--)
-            {
-                if (!ZoneIsTitan(i))
-                    return i;
-                if (includingTitans)
-                    return i;
-            }
+                for (int i = maxZone; i >= 0; i--)
+                {
+                    if (!ZoneIsTitan(i))
+                        return i;
+                    if (includingTitans)
+                        return i;
+                }
             return -1;
         }
     }
