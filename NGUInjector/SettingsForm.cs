@@ -158,7 +158,7 @@ namespace NGUInjector
             if (normalized.Contains("wandoos"))
                 return "Wandoos 速度";
             if (normalized.Contains("augment"))
-                return "升变速度";
+                return "挂件速度";
             if (normalized.Contains("timemachine"))
                 return "时间机器速度";
             if (normalized.Contains("hack"))

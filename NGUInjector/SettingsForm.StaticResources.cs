@@ -2829,7 +2829,7 @@ namespace NGUInjector
                 new StaticResourceValue("label33", "Margin", new Padding(5, 0, 5, 0)),
                 new StaticResourceValue("label33", "Size", new Size(154, 32)),
                 new StaticResourceValue("label33", "TabIndex", 49),
-                new StaticResourceValue("label33", "Text", "升变速度"),
+                new StaticResourceValue("label33", "Text", "挂件速度"),
                 new StaticResourceValue("label33", "TextAlign", System.Drawing.ContentAlignment.MiddleLeft),
                 new StaticResourceValue("label34", "Anchor", System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left),
                 new StaticResourceValue("label34", "AutoSize", true),

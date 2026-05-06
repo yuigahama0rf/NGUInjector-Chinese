@@ -12829,7 +12829,7 @@
     <value>49</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
-    <value>升变速度</value>
+    <value>挂件速度</value>
   </data>
   <data name="label33.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
