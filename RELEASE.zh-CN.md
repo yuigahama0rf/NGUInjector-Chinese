@@ -7,7 +7,7 @@
 发布包：
 
 ```text
-package/NGUInjector-中文兼容版3.zip
+package/NGUInjector-Chinese-compatible-v4.1.7-cn.3.zip
 ```
 
 SHA-256：
