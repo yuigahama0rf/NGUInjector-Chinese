@@ -1,5 +1,7 @@
 # NGUInjector
 
+[中文说明 / Chinese README](README.zh-CN.md)
+
 NGUInjector is an automation platform for the steam version of NGU Idle.
 
 # Instructions

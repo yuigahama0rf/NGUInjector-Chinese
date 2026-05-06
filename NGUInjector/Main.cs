@@ -189,7 +189,8 @@ namespace NGUInjector
                         return;
                     }
                     Settings.LoadSettings();
-                    settingsForm.UpdateFromSettings(Settings);
+                    if (settingsForm.Initialized)
+                        settingsForm.UpdateFromSettings(Settings);
                     LoadAllocation();
                 };
 
@@ -211,7 +212,8 @@ namespace NGUInjector
 
                 ZoneStatHelper.CreateOverrides(_dir);
 
-                settingsForm.UpdateFromSettings(Settings);
+                if (settingsForm.Initialized)
+                    settingsForm.UpdateFromSettings(Settings);
                 settingsForm.Show();
 
                 InvokeRepeating("AutomationRoutine", 0.0f, 10.0f);
@@ -224,17 +226,23 @@ namespace NGUInjector
             {
                 LogDebug(e.ToString());
                 LogDebug(e.StackTrace);
-                LogDebug(e.InnerException.ToString());
+                if (e.InnerException != null)
+                    LogDebug(e.InnerException.ToString());
             }
         }
 
-        public static void UpdateForm(SavedSettings newSettings) => settingsForm.UpdateFromSettings(newSettings);
+        public static void UpdateForm(SavedSettings newSettings)
+        {
+            if (settingsForm != null && settingsForm.Initialized)
+                settingsForm.UpdateFromSettings(newSettings);
+        }
 
         public void Update()
         {
             _timeLeft -= Time.deltaTime;
 
-            settingsForm.UpdateProgressBar((int)Math.Floor(_timeLeft / 10 * 100));
+            if (settingsForm.Initialized)
+                settingsForm.UpdateProgressBar((int)Math.Floor(_timeLeft / 10 * 100));
 
             if (Input.GetKeyDown(KeyCode.F1))
             {
@@ -486,8 +494,8 @@ namespace NGUInjector
             {
                 var diff = saveTime.GetPrettyDate();
 
-                var confirmResult = MessageBox.Show($"Last quicksave was {diff}. Are you sure you want to load?",
-                    "Load Quicksave"
+                var confirmResult = MessageBox.Show($"上次快速存档是 {diff}。确定要载入吗？",
+                    "载入快速存档"
                     , MessageBoxButtons.YesNo);
 
                 if (confirmResult == DialogResult.No)
@@ -1072,10 +1080,10 @@ namespace NGUInjector
             {
                 fontSize = Mathf.CeilToInt(10 * scale)
             };
-            GUI.Label(new Rect(offset, 0 * offset, width, height), $"Automation - {(Settings.GlobalEnabled ? "Active" : "Inactive")}", style);
-            GUI.Label(new Rect(offset, 1 * offset, width, height), $"Next Loop - {_timeLeft:00.0}s", style);
-            GUI.Label(new Rect(offset, 2 * offset, width, height), $"Profile - {Settings.AllocationFile}", style);
-            GUI.Label(new Rect(offset, 3 * offset, width, height), $"Action - {LockManager.GetLockTypeName()}", style);
+            GUI.Label(new Rect(offset, 0 * offset, width, height), $"自动化 - {(Settings.GlobalEnabled ? "运行中" : "未运行")}", style);
+            GUI.Label(new Rect(offset, 1 * offset, width, height), $"下次循环 - {_timeLeft:00.0}s", style);
+            GUI.Label(new Rect(offset, 2 * offset, width, height), $"配置 - {Settings.AllocationFile}", style);
+            GUI.Label(new Rect(offset, 3 * offset, width, height), $"动作 - {LockManager.GetLockTypeName()}", style);
         }
 
         public void MonitorLog()

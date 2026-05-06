@@ -84,7 +84,40 @@ namespace NGUInjector
             public void UpdateList(int[] newList) => UpdateItemList(ItemList, newList, GetDisplayName);
         }
 
+        private sealed class StringOption
+        {
+            public StringOption(string key, string text)
+            {
+                Key = key;
+                Text = text;
+            }
+
+            public string Key { get; }
+
+            public string Text { get; }
+
+            public override string ToString() => Text;
+        }
+
         private static readonly Character _character = Main.Character;
+
+        private static readonly Dictionary<string, string> BoostPriorityLabels = new Dictionary<string, string>
+        {
+            { "Power", "力量" },
+            { "Toughness", "韧性" },
+            { "Special", "特殊" }
+        };
+
+        private static readonly Dictionary<string, string> CardSortLabels = new Dictionary<string, string>
+        {
+            { "RARITY", "稀有度" },
+            { "TIER", "阶层" },
+            { "COST", "花费" },
+            { "PROTECTED", "已保护" },
+            { "CHANGE", "变化" },
+            { "VALUE", "价值" },
+            { "NORMALVALUE", "普通价值" }
+        };
 
         private bool _initializing = true;
 
@@ -108,6 +141,80 @@ namespace NGUInjector
 
         private readonly ComboBox[] _cardRarity = new ComboBox[14];
         private readonly ComboBox[] _cardCost = new ComboBox[14];
+
+        private static string LocalizeBoostPriority(string priority)
+        {
+            return BoostPriorityLabels.TryGetValue(priority, out var label) ? label : priority;
+        }
+
+        private static string LocalizeCardBonus(string bonus)
+        {
+            var normalized = bonus.Replace("_", "").ToLowerInvariant();
+
+            if (normalized.Contains("energy") && normalized.Contains("ngu"))
+                return "能量 NGU 速度";
+            if (normalized.Contains("magic") && normalized.Contains("ngu"))
+                return "魔力 NGU 速度";
+            if (normalized.Contains("wandoos"))
+                return "Wandoos 速度";
+            if (normalized.Contains("augment"))
+                return "升变速度";
+            if (normalized.Contains("timemachine"))
+                return "时间机器速度";
+            if (normalized.Contains("hack"))
+                return "黑客速度";
+            if (normalized.Contains("wish"))
+                return "许愿速度";
+            if (normalized.Contains("attack") || normalized.Contains("defense"))
+                return "攻击/防御";
+            if (normalized.Contains("adventure"))
+                return "冒险属性";
+            if (normalized.Contains("dropchance"))
+                return "掉落率";
+            if (normalized.Contains("gold"))
+                return "黄金掉落";
+            if (normalized.Contains("daycare"))
+                return "日托速度";
+            if (normalized.Contains("qp") || normalized.Contains("quirk"))
+                return "怪癖点获取";
+            if (normalized.Contains("pp") || normalized.Contains("perk"))
+                return "特权点获取";
+
+            return bonus;
+        }
+
+        private static string LocalizeCardSortOption(string option)
+        {
+            var isAscending = option.Contains("-ASC");
+            var key = option.Replace("-ASC", "");
+
+            if (key.StartsWith("TYPE:"))
+            {
+                var label = $"类型：{LocalizeCardBonus(key.Substring("TYPE:".Length))}";
+                return isAscending ? $"{label}（升序）" : label;
+            }
+
+            var baseLabel = CardSortLabels.TryGetValue(key, out var text) ? text : key;
+            return isAscending ? $"{baseLabel}（升序）" : baseLabel;
+        }
+
+        private static StringOption CreateCardSortOption(string option)
+        {
+            return new StringOption(option, LocalizeCardSortOption(option));
+        }
+
+        private string[] GetCardSortKeysFromList()
+        {
+            return CardSortList.Items.Cast<StringOption>().Select(x => x.Key).ToArray();
+        }
+
+        private void SetCardSortList(string[] sortOrder)
+        {
+            CardSortList.DataSource = null;
+            CardSortList.Items.Clear();
+            foreach (var option in sortOrder)
+                CardSortList.Items.Add(CreateCardSortOption(option));
+        }
 
         public SettingsForm()
         {
@@ -153,13 +260,13 @@ namespace NGUInjector
                 var cardSortOptions = new List<string> { "RARITY", "TIER", "COST", "PROTECTED", "CHANGE", "VALUE", "NORMALVALUE" };
                 foreach (string sortOption in cardSortOptions)
                 {
-                    CardSortOptions.Items.Add(sortOption);
-                    CardSortOptions.Items.Add($"{sortOption}-ASC");
+                    CardSortOptions.Items.Add(CreateCardSortOption(sortOption));
+                    CardSortOptions.Items.Add(CreateCardSortOption($"{sortOption}-ASC"));
                 }
                 foreach (string bonus in cardBonusTypes)
                 {
-                    CardSortOptions.Items.Add($"TYPE:{bonus}");
-                    CardSortOptions.Items.Add($"TYPE-ASC:{bonus}");
+                    CardSortOptions.Items.Add(CreateCardSortOption($"TYPE:{bonus}"));
+                    CardSortOptions.Items.Add(CreateCardSortOption($"TYPE-ASC:{bonus}"));
                 }
 
                 for (int i = 0; i <= 13; i++)
@@ -261,12 +368,64 @@ namespace NGUInjector
                 TryItemBoxTextChanged(_shockwaveControls, out _);
                 TryItemBoxTextChanged(_cookingControls, out _);
 
-                VersionLabel.Text = $"Version: {Main.Version}";
+                VersionLabel.Text = $"版本：{Main.Version}";
                 _initializing = false;
+                Initialized = true;
             }
             catch (Exception ex)
             {
-                LogDebug($"{ex.Message}:\n{ex.StackTrace}");
+                _initializing = false;
+                LogDebug(ex.ToString());
+                ShowInitializationError(ex);
+            }
+        }
+
+        public bool Initialized { get; private set; }
+
+        private void ShowInitializationError(Exception ex)
+        {
+            try
+            {
+                Controls.Clear();
+
+                Text = "注入器设置 - 初始化失败";
+                Size = new Size(760, 420);
+                StartPosition = FormStartPosition.CenterScreen;
+
+                var layout = new TableLayoutPanel
+                {
+                    Dock = DockStyle.Fill,
+                    Padding = new Padding(14),
+                    ColumnCount = 1,
+                    RowCount = 2
+                };
+                layout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
+                layout.RowStyles.Add(new RowStyle(SizeType.Percent, 100f));
+
+                var message = new Label
+                {
+                    AutoSize = true,
+                    Dock = DockStyle.Fill,
+                    ForeColor = Color.DarkRed,
+                    Text = "设置界面初始化失败。请查看日志：%UserProfile%\\AppData\\LocalLow\\NGUInjector\\logs\\debug.log"
+                };
+
+                var details = new TextBox
+                {
+                    Dock = DockStyle.Fill,
+                    Multiline = true,
+                    ReadOnly = true,
+                    ScrollBars = ScrollBars.Vertical,
+                    Text = ex.ToString()
+                };
+
+                layout.Controls.Add(message, 0, 0);
+                layout.Controls.Add(details, 0, 1);
+                Controls.Add(layout);
+            }
+            catch
+            {
+                // If WinForms itself cannot build controls, keep the original log entry as the source of truth.
             }
         }
 
@@ -389,7 +548,7 @@ namespace NGUInjector
                 var zone = ZoneHelpers.TitanZones[i];
                 var text = $"{titanZoneList[zone]}";
                 if (newSettings.TitanGoldTargets[i])
-                    text = $"{text} ({(newSettings.TitanMoneyDone[i] ? "Done" : "Waiting")})";
+                    text = $"{text} ({(newSettings.TitanMoneyDone[i] ? "已完成" : "等待中")})";
                 var item = new ListViewItem
                 {
                     Tag = i,
@@ -493,10 +652,15 @@ namespace NGUInjector
 
             BoostPriorityList.Items.Clear();
             foreach (string priority in newSettings.BoostPriority)
-                BoostPriorityList.Items.Add(priority);
+                BoostPriorityList.Items.Add(LocalizeBoostPriority(priority));
 
             if (BoostPriorityList.Items.Count != 3)
-                BoostPriorityList.Items.AddRange(new string[] { "Power", "Toughness", "Special" });
+                BoostPriorityList.Items.AddRange(new string[]
+                {
+                    LocalizeBoostPriority("Power"),
+                    LocalizeBoostPriority("Toughness"),
+                    LocalizeBoostPriority("Special")
+                });
 
             _priorityControls.UpdateList(newSettings.PriorityBoosts);
             _blacklistControls.UpdateList(newSettings.BoostBlacklist);
@@ -587,11 +751,11 @@ namespace NGUInjector
 
             if (newSettings.CardSortOrder.Length > 0)
             {
-                CardSortList.DataSource = null;
-                CardSortList.DataSource = new BindingSource(newSettings.CardSortOrder, null);
+                SetCardSortList(newSettings.CardSortOrder);
             }
             else
             {
+                CardSortList.DataSource = null;
                 CardSortList.Items.Clear();
             }
 
@@ -636,14 +800,14 @@ namespace NGUInjector
                 return false;
             }
 
-            var itemName = controls.GetDisplayName(val).Replace("<b><color=blue>[QUEST ITEM]</color></b>", "[QUEST ITEM]");
+            var itemName = controls.GetDisplayName(val).Replace("<b><color=blue>[QUEST ITEM]</color></b>", "[任务物品]");
             bool isValid = true;
 
             if (controls.CheckIsEquipment)
             {
                 isValid = (int)_character.itemInfo.type[val] <= 5;
                 if (!isValid)
-                    itemName += " (UNEQUIPPABLE)";
+                    itemName += "（不可装备）";
             }
             controls.ItemLabel.Text = itemName;
 
@@ -662,7 +826,7 @@ namespace NGUInjector
 
             if (!TryItemBoxTextChanged(controls, out int val))
             {
-                controls.SetError("Invalid item id");
+                controls.SetError("无效的物品 ID");
                 return;
             }
 
@@ -726,6 +890,25 @@ namespace NGUInjector
                 return;
 
             (settings[newIndex], settings[index]) = (settings[index], settings[newIndex]);
+            Settings.SaveSettings();
+
+            itemList.SelectedIndex = newIndex;
+        }
+
+        private void SimpleListMove<T>(ListBox itemList, T[] settings, Direction direction)
+        {
+            var index = itemList.SelectedIndex;
+            if (index == -1)
+                return;
+
+            var newIndex = index - (int)direction;
+            if (newIndex < 0 || newIndex >= settings.Length)
+                return;
+
+            (settings[newIndex], settings[index]) = (settings[index], settings[newIndex]);
+            var item = itemList.Items[index];
+            itemList.Items[index] = itemList.Items[newIndex];
+            itemList.Items[newIndex] = item;
             Settings.SaveSettings();
 
             itemList.SelectedIndex = newIndex;
@@ -897,9 +1080,9 @@ namespace NGUInjector
             Settings.AutoConvertBoosts = ManageBoostConvert.Checked;
         }
 
-        private void BoostPrioUpButton_Click(object sender, EventArgs e) => ItemListMove(BoostPriorityList, Settings.BoostPriority, Direction.Up);
+        private void BoostPrioUpButton_Click(object sender, EventArgs e) => SimpleListMove(BoostPriorityList, Settings.BoostPriority, Direction.Up);
 
-        private void BoostPrioDownButton_Click(object sender, EventArgs e) => ItemListMove(BoostPriorityList, Settings.BoostPriority, Direction.Down);
+        private void BoostPrioDownButton_Click(object sender, EventArgs e) => SimpleListMove(BoostPriorityList, Settings.BoostPriority, Direction.Down);
 
         private void PriorityBoostItemAdd_TextChanged(object sender, EventArgs e) => TryItemBoxTextChanged(_priorityControls, out _);
 
@@ -1082,7 +1265,7 @@ namespace NGUInjector
             }
             else if (!double.TryParse(BloodNumberThreshold.Text, out saved))
             {
-                numberErrProvider.SetError(BloodNumberThreshold, "Invalid format");
+                numberErrProvider.SetError(BloodNumberThreshold, "格式无效");
                 return;
             }
             if (saved < 0.0)
@@ -1264,7 +1447,7 @@ namespace NGUInjector
                 if (LockManager.TryYggdrasilSwap(true))
                     YggdrasilManager.HarvestAll(true);
                 else
-                    Log("Unable to harvest now");
+                    Log("现在无法收获");
             }
         }
 
@@ -1562,10 +1745,11 @@ namespace NGUInjector
 
         private void CardSortAdd_Click(object sender, EventArgs e)
         {
-            if (CardSortOptions.SelectedItem != null && !CardSortList.Items.Contains(CardSortOptions.SelectedItem))
+            var option = CardSortOptions.SelectedItem as StringOption;
+            if (option != null && CardSortList.Items.Cast<StringOption>().All(x => x.Key != option.Key))
             {
-                CardSortList.Items.Add(CardSortOptions.SelectedItem);
-                Settings.CardSortOrder = CardSortList.Items.Cast<string>().ToArray();
+                CardSortList.Items.Add(option);
+                Settings.CardSortOrder = GetCardSortKeysFromList();
             }
         }
 
@@ -1574,13 +1758,13 @@ namespace NGUInjector
             if (CardSortList.SelectedItem != null)
             {
                 CardSortList.Items.RemoveAt(CardSortList.SelectedIndex);
-                Settings.CardSortOrder = CardSortList.Items.Cast<string>().ToArray();
+                Settings.CardSortOrder = GetCardSortKeysFromList();
             }
         }
 
-        private void CardSortUp_Click(object sender, EventArgs e) => ItemListMove(CardSortList, Settings.CardSortOrder, Direction.Up);
+        private void CardSortUp_Click(object sender, EventArgs e) => SimpleListMove(CardSortList, Settings.CardSortOrder, Direction.Up);
 
-        private void CardSortDown_Click(object sender, EventArgs e) => ItemListMove(CardSortList, Settings.CardSortOrder, Direction.Down);
+        private void CardSortDown_Click(object sender, EventArgs e) => SimpleListMove(CardSortList, Settings.CardSortOrder, Direction.Down);
 
         private void LocateWalderp_Click(object sender, EventArgs e)
         {

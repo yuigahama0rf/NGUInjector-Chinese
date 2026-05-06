@@ -289,32 +289,32 @@ namespace NGUInjector
                 // A.
                 // Less than one minute ago.
                 if (secDiff < 60)
-                    return "just now";
+                    return "刚刚";
                 // B.
                 // Less than 2 minutes ago.
                 if (secDiff < 120)
-                    return "1 minute ago";
+                    return "1 分钟前";
                 // C.
                 // Less than one hour ago.
                 if (secDiff < 3600)
-                    return $"{Math.Floor((double)secDiff / 60)} minutes ago";
+                    return $"{Math.Floor((double)secDiff / 60)} 分钟前";
                 // D.
                 // Less than 2 hours ago.
                 if (secDiff < 7200)
-                    return "1 hour ago";
+                    return "1 小时前";
                 // E.
                 // Less than one day ago.
                 if (secDiff < 86400)
-                    return $"{Math.Floor((double)secDiff / 3600)} hours ago";
+                    return $"{Math.Floor((double)secDiff / 3600)} 小时前";
             }
             // 6.
             // Handle previous days.
             if (dayDiff == 1)
-                return "yesterday";
+                return "昨天";
             if (dayDiff < 7)
-                return $"{dayDiff} days ago";
+                return $"{dayDiff} 天前";
             if (dayDiff < 31)
-                return $"{Math.Ceiling((double)dayDiff / 7)} weeks ago";
+                return $"{Math.Ceiling((double)dayDiff / 7)} 周前";
             return null;
         }
     }

@@ -196,7 +196,7 @@
     <value>19</value>
   </data>
   <data name="OpenSettingsFolder.Text" xml:space="preserve">
-    <value>Open Settings Folder</value>
+    <value>打开设置文件夹</value>
   </data>
   <data name="&gt;&gt;OpenSettingsFolder.Name" xml:space="preserve">
     <value>OpenSettingsFolder</value>
@@ -238,7 +238,7 @@
     <value>4</value>
   </data>
   <data name="MasterEnable.Text" xml:space="preserve">
-    <value>Master Switch</value>
+    <value>总开关</value>
   </data>
   <data name="&gt;&gt;MasterEnable.Name" xml:space="preserve">
     <value>MasterEnable</value>
@@ -271,7 +271,7 @@
     <value>18</value>
   </data>
   <data name="DisableOverlay.Text" xml:space="preserve">
-    <value>Disable Overlay</value>
+    <value>禁用悬浮层</value>
   </data>
   <data name="&gt;&gt;DisableOverlay.Name" xml:space="preserve">
     <value>DisableOverlay</value>
@@ -337,7 +337,7 @@
     <value>16</value>
   </data>
   <data name="UnloadButton.Text" xml:space="preserve">
-    <value>Unload</value>
+    <value>卸载</value>
   </data>
   <data name="&gt;&gt;UnloadButton.Name" xml:space="preserve">
     <value>UnloadButton</value>
@@ -400,7 +400,7 @@
     <value>15</value>
   </data>
   <data name="VersionLabel.Text" xml:space="preserve">
-    <value>Version: 4.1.7</value>
+    <value>版本：4.1.7</value>
   </data>
   <data name="VersionLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -439,7 +439,7 @@
     <value>23</value>
   </data>
   <data name="MoneyPitRunMode.Text" xml:space="preserve">
-    <value>Money Pit Run Mode</value>
+    <value>钱坑运行模式</value>
   </data>
   <data name="&gt;&gt;MoneyPitRunMode.Name" xml:space="preserve">
     <value>MoneyPitRunMode</value>
@@ -475,7 +475,7 @@
     <value>24</value>
   </data>
   <data name="Autosave.Text" xml:space="preserve">
-    <value>Auto Daily Save</value>
+    <value>自动每日存档</value>
   </data>
   <data name="&gt;&gt;Autosave.Name" xml:space="preserve">
     <value>Autosave</value>
@@ -511,7 +511,7 @@
     <value>7</value>
   </data>
   <data name="AutoFightBosses.Text" xml:space="preserve">
-    <value>Auto Fight Bosses</value>
+    <value>自动挑战首领</value>
   </data>
   <data name="&gt;&gt;AutoFightBosses.Name" xml:space="preserve">
     <value>AutoFightBosses</value>
@@ -544,7 +544,7 @@
     <value>21</value>
   </data>
   <data name="AutoBuyConsumables.Text" xml:space="preserve">
-    <value>Auto Buy Consumables</value>
+    <value>自动购买消耗品</value>
   </data>
   <data name="&gt;&gt;AutoBuyConsumables.Name" xml:space="preserve">
     <value>AutoBuyConsumables</value>
@@ -577,7 +577,7 @@
     <value>22</value>
   </data>
   <data name="ConsumeIfRunning.Text" xml:space="preserve">
-    <value>Use Consumables if already running</value>
+    <value>已在运行时也使用消耗品</value>
   </data>
   <data name="&gt;&gt;ConsumeIfRunning.Name" xml:space="preserve">
     <value>ConsumeIfRunning</value>
@@ -613,7 +613,7 @@
     <value>14</value>
   </data>
   <data name="AutoBuyEM.Text" xml:space="preserve">
-    <value>Auto Buy Energy/Magic/R3</value>
+    <value>自动购买能量/魔力/资源3</value>
   </data>
   <data name="&gt;&gt;AutoBuyEM.Name" xml:space="preserve">
     <value>AutoBuyEM</value>
@@ -649,7 +649,7 @@
     <value>20</value>
   </data>
   <data name="AutoBuyAdv.Text" xml:space="preserve">
-    <value>Auto Buy Adventure Stats</value>
+    <value>自动购买冒险属性</value>
   </data>
   <data name="&gt;&gt;AutoBuyAdv.Name" xml:space="preserve">
     <value>AutoBuyAdv</value>
@@ -709,7 +709,7 @@
     <value>0</value>
   </data>
   <data name="tabPage1.Text" xml:space="preserve">
-    <value>General</value>
+    <value>常规</value>
   </data>
   <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
     <value>tabPage1</value>
@@ -763,7 +763,7 @@
     <value>18</value>
   </data>
   <data name="AllocationProfileFileLabel.Text" xml:space="preserve">
-    <value>Allocation Profile</value>
+    <value>分配配置</value>
   </data>
   <data name="&gt;&gt;AllocationProfileFileLabel.Name" xml:space="preserve">
     <value>AllocationProfileFileLabel</value>
@@ -796,7 +796,7 @@
     <value>19</value>
   </data>
   <data name="ChangeProfileFile.Text" xml:space="preserve">
-    <value>Change profile</value>
+    <value>更改配置</value>
   </data>
   <data name="&gt;&gt;ChangeProfileFile.Name" xml:space="preserve">
     <value>ChangeProfileFile</value>
@@ -835,7 +835,7 @@
     <value>28</value>
   </data>
   <data name="ProfileEditButton.Text" xml:space="preserve">
-    <value>Edit</value>
+    <value>编辑</value>
   </data>
   <data name="&gt;&gt;ProfileEditButton.Name" xml:space="preserve">
     <value>ProfileEditButton</value>
@@ -874,7 +874,7 @@
     <value>32</value>
   </data>
   <data name="OpenProfileFolder.Text" xml:space="preserve">
-    <value>Open Profile Folder</value>
+    <value>打开配置文件夹</value>
   </data>
   <data name="&gt;&gt;OpenProfileFolder.Name" xml:space="preserve">
     <value>OpenProfileFolder</value>
@@ -979,7 +979,7 @@
     <value>0</value>
   </data>
   <data name="ManageEnergy.Text" xml:space="preserve">
-    <value>Manage Energy</value>
+    <value>管理能量</value>
   </data>
   <data name="&gt;&gt;ManageEnergy.Name" xml:space="preserve">
     <value>ManageEnergy</value>
@@ -1015,7 +1015,7 @@
     <value>4</value>
   </data>
   <data name="ManageWandoos.Text" xml:space="preserve">
-    <value>Manage Wandoos OS</value>
+    <value>管理 Wandoos 操作系统</value>
   </data>
   <data name="&gt;&gt;ManageWandoos.Name" xml:space="preserve">
     <value>ManageWandoos</value>
@@ -1081,7 +1081,7 @@
     <value>37</value>
   </data>
   <data name="label45.Text" xml:space="preserve">
-    <value>% of GPS</value>
+    <value>每秒黄金的 %</value>
   </data>
   <data name="&gt;&gt;label45.Name" xml:space="preserve">
     <value>label45</value>
@@ -1117,7 +1117,7 @@
     <value>3</value>
   </data>
   <data name="ManageDiggers.Text" xml:space="preserve">
-    <value>Manage Diggers</value>
+    <value>管理掘金者</value>
   </data>
   <data name="&gt;&gt;ManageDiggers.Name" xml:space="preserve">
     <value>ManageDiggers</value>
@@ -1153,7 +1153,7 @@
     <value>2</value>
   </data>
   <data name="ManageGear.Text" xml:space="preserve">
-    <value>Manage Gear</value>
+    <value>管理装备</value>
   </data>
   <data name="&gt;&gt;ManageGear.Name" xml:space="preserve">
     <value>ManageGear</value>
@@ -1189,7 +1189,7 @@
     <value>5</value>
   </data>
   <data name="AutoRebirth.Text" xml:space="preserve">
-    <value>Auto Rebirth</value>
+    <value>自动重生</value>
   </data>
   <data name="&gt;&gt;AutoRebirth.Name" xml:space="preserve">
     <value>AutoRebirth</value>
@@ -1225,7 +1225,7 @@
     <value>35</value>
   </data>
   <data name="label44.Text" xml:space="preserve">
-    <value>Limit diggers to</value>
+    <value>掘金者限制为</value>
   </data>
   <data name="&gt;&gt;label44.Name" xml:space="preserve">
     <value>label44</value>
@@ -1261,7 +1261,7 @@
     <value>1</value>
   </data>
   <data name="ManageMagic.Text" xml:space="preserve">
-    <value>Manage Magic</value>
+    <value>管理魔力</value>
   </data>
   <data name="&gt;&gt;ManageMagic.Name" xml:space="preserve">
     <value>ManageMagic</value>
@@ -1297,7 +1297,7 @@
     <value>34</value>
   </data>
   <data name="ManageBeards.Text" xml:space="preserve">
-    <value>Manage Beards</value>
+    <value>管理胡子</value>
   </data>
   <data name="&gt;&gt;ManageBeards.Name" xml:space="preserve">
     <value>ManageBeards</value>
@@ -1333,7 +1333,7 @@
     <value>17</value>
   </data>
   <data name="ManageNGUDiff.Text" xml:space="preserve">
-    <value>Manage NGU Difficulty</value>
+    <value>管理 NGU 难度</value>
   </data>
   <data name="&gt;&gt;ManageNGUDiff.Name" xml:space="preserve">
     <value>ManageNGUDiff</value>
@@ -1366,7 +1366,7 @@
     <value>33</value>
   </data>
   <data name="ManageConsumables.Text" xml:space="preserve">
-    <value>Manage Consumables</value>
+    <value>管理消耗品</value>
   </data>
   <data name="&gt;&gt;ManageConsumables.Name" xml:space="preserve">
     <value>ManageConsumables</value>
@@ -1402,7 +1402,7 @@
     <value>20</value>
   </data>
   <data name="UpgradeDiggers.Text" xml:space="preserve">
-    <value>Auto Upgrade Diggers</value>
+    <value>自动升级掘金者</value>
   </data>
   <data name="&gt;&gt;UpgradeDiggers.Name" xml:space="preserve">
     <value>UpgradeDiggers</value>
@@ -1438,7 +1438,7 @@
     <value>16</value>
   </data>
   <data name="ManageR3.Text" xml:space="preserve">
-    <value>Manage R3</value>
+    <value>管理资源3</value>
   </data>
   <data name="&gt;&gt;ManageR3.Name" xml:space="preserve">
     <value>ManageR3</value>
@@ -1513,7 +1513,7 @@
     <value>6</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
-    <value>Spells</value>
+    <value>魔法</value>
   </data>
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
@@ -1549,7 +1549,7 @@
     <value>7</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
-    <value>Spaghetti %</value>
+    <value>血之意面 %</value>
   </data>
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
@@ -1585,7 +1585,7 @@
     <value>9</value>
   </data>
   <data name="label16.Text" xml:space="preserve">
-    <value>Counterfeit %</value>
+    <value>伪造黄金 %</value>
   </data>
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
@@ -1621,7 +1621,7 @@
     <value>14</value>
   </data>
   <data name="label18.Text" xml:space="preserve">
-    <value>Number Bonus</value>
+    <value>增数加成</value>
   </data>
   <data name="&gt;&gt;label18.Name" xml:space="preserve">
     <value>label18</value>
@@ -1657,7 +1657,7 @@
     <value>31</value>
   </data>
   <data name="GuffBOnRebirth.Text" xml:space="preserve">
-    <value>Cast on Rebirth</value>
+    <value>重生时施放</value>
   </data>
   <data name="&gt;&gt;GuffBOnRebirth.Name" xml:space="preserve">
     <value>GuffBOnRebirth</value>
@@ -1693,7 +1693,7 @@
     <value>12</value>
   </data>
   <data name="AutoSpellSwap.Text" xml:space="preserve">
-    <value>Change Auto Spells</value>
+    <value>切换自动魔法</value>
   </data>
   <data name="&gt;&gt;AutoSpellSwap.Name" xml:space="preserve">
     <value>AutoSpellSwap</value>
@@ -1729,7 +1729,7 @@
     <value>30</value>
   </data>
   <data name="GuffAOnRebirth.Text" xml:space="preserve">
-    <value>Cast on Rebirth</value>
+    <value>重生时施放</value>
   </data>
   <data name="&gt;&gt;GuffAOnRebirth.Name" xml:space="preserve">
     <value>GuffAOnRebirth</value>
@@ -1792,7 +1792,7 @@
     <value>29</value>
   </data>
   <data name="IronPillOnRebirth.Text" xml:space="preserve">
-    <value>Cast on Rebirth</value>
+    <value>重生时施放</value>
   </data>
   <data name="&gt;&gt;IronPillOnRebirth.Name" xml:space="preserve">
     <value>IronPillOnRebirth</value>
@@ -1888,7 +1888,7 @@
     <value>25</value>
   </data>
   <data name="label123.Text" xml:space="preserve">
-    <value>Iron Pill</value>
+    <value>铁丸</value>
   </data>
   <data name="&gt;&gt;label123.Name" xml:space="preserve">
     <value>label123</value>
@@ -1954,7 +1954,7 @@
     <value>23</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
-    <value>Guff B</value>
+    <value>麦高芬 β</value>
   </data>
   <data name="&gt;&gt;label26.Name" xml:space="preserve">
     <value>label26</value>
@@ -1987,7 +1987,7 @@
     <value>27</value>
   </data>
   <data name="CastBloodSpells.Text" xml:space="preserve">
-    <value>Cast Blood Spells</value>
+    <value>施放血魔法</value>
   </data>
   <data name="&gt;&gt;CastBloodSpells.Name" xml:space="preserve">
     <value>CastBloodSpells</value>
@@ -2023,7 +2023,7 @@
     <value>21</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
-    <value>Guff A</value>
+    <value>麦高芬 α</value>
   </data>
   <data name="&gt;&gt;label27.Name" xml:space="preserve">
     <value>label27</value>
@@ -2266,7 +2266,7 @@
     <value>1</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
-    <value>Allocation</value>
+    <value>分配</value>
   </data>
   <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
     <value>tabPage2</value>
@@ -2317,7 +2317,7 @@
     <value>14</value>
   </data>
   <data name="HarvestAllButton.Text" xml:space="preserve">
-    <value>Harvest All Now</value>
+    <value>立即收获全部</value>
   </data>
   <data name="&gt;&gt;HarvestAllButton.Name" xml:space="preserve">
     <value>HarvestAllButton</value>
@@ -2425,7 +2425,7 @@
     <value>4</value>
   </data>
   <data name="ManageYggdrasil.Text" xml:space="preserve">
-    <value>Manage Yggdrasil</value>
+    <value>管理世界树</value>
   </data>
   <data name="&gt;&gt;ManageYggdrasil.Name" xml:space="preserve">
     <value>ManageYggdrasil</value>
@@ -2455,7 +2455,7 @@
     <value>5</value>
   </data>
   <data name="SwapYggdrasilDiggers.Text" xml:space="preserve">
-    <value>Swap Diggers</value>
+    <value>切换掘金者</value>
   </data>
   <data name="&gt;&gt;SwapYggdrasilDiggers.Name" xml:space="preserve">
     <value>SwapYggdrasilDiggers</value>
@@ -2485,7 +2485,7 @@
     <value>6</value>
   </data>
   <data name="SwapYggdrasilBeards.Text" xml:space="preserve">
-    <value>Swap Beards</value>
+    <value>切换胡子</value>
   </data>
   <data name="&gt;&gt;SwapYggdrasilBeards.Name" xml:space="preserve">
     <value>SwapYggdrasilBeards</value>
@@ -2539,10 +2539,10 @@
     <value>24</value>
   </data>
   <data name="YggdrasilLoadoutBox.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="YggdrasilLoadoutBox.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="YggdrasilLoadoutBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 44</value>
@@ -2599,7 +2599,7 @@
     <value>12</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Loadout</value>
+    <value>装备配置</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -2635,7 +2635,7 @@
     <value>5</value>
   </data>
   <data name="YggdrasilSwap.Text" xml:space="preserve">
-    <value>Swap Loadout for Yggdrasil</value>
+    <value>为世界树切换装备配置</value>
   </data>
   <data name="&gt;&gt;YggdrasilSwap.Name" xml:space="preserve">
     <value>YggdrasilSwap</value>
@@ -2704,7 +2704,7 @@
     <value>11</value>
   </data>
   <data name="YggRemoveButton.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;YggRemoveButton.Name" xml:space="preserve">
     <value>YggRemoveButton</value>
@@ -2764,7 +2764,7 @@
     <value>8</value>
   </data>
   <data name="YggAddButton.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;YggAddButton.Name" xml:space="preserve">
     <value>YggAddButton</value>
@@ -2935,7 +2935,7 @@
     <value>18</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
-    <value>Minimum Fruit Level for Swap</value>
+    <value>切换所需最低果实等级</value>
   </data>
   <data name="label35.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
@@ -2974,7 +2974,7 @@
     <value>13</value>
   </data>
   <data name="ActivateFruits.Text" xml:space="preserve">
-    <value>Activate Fruits</value>
+    <value>激活果实</value>
   </data>
   <data name="&gt;&gt;ActivateFruits.Name" xml:space="preserve">
     <value>ActivateFruits</value>
@@ -3064,7 +3064,7 @@
     <value>2</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
-    <value>Yggdrasil</value>
+    <value>世界树</value>
   </data>
   <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
     <value>tabPage3</value>
@@ -3118,7 +3118,7 @@
     <value>17</value>
   </data>
   <data name="ManageInventory.Text" xml:space="preserve">
-    <value>Manage Inventory</value>
+    <value>管理物品栏</value>
   </data>
   <data name="&gt;&gt;ManageInventory.Name" xml:space="preserve">
     <value>ManageInventory</value>
@@ -3154,7 +3154,7 @@
     <value>18</value>
   </data>
   <data name="ManageBoostConvert.Text" xml:space="preserve">
-    <value>Manage Boost Conversion</value>
+    <value>管理提升转换</value>
   </data>
   <data name="&gt;&gt;ManageBoostConvert.Name" xml:space="preserve">
     <value>ManageBoostConvert</value>
@@ -3190,7 +3190,7 @@
     <value>40</value>
   </data>
   <data name="label49.Text" xml:space="preserve">
-    <value>Favored Macguffin</value>
+    <value>偏好麦高芬</value>
   </data>
   <data name="&gt;&gt;label49.Name" xml:space="preserve">
     <value>label49</value>
@@ -3226,7 +3226,7 @@
     <value>33</value>
   </data>
   <data name="label20.Text" xml:space="preserve">
-    <value>Cube Boost Priority</value>
+    <value>方块提升优先级</value>
   </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>
@@ -3244,19 +3244,19 @@
     <value>Left</value>
   </data>
   <data name="CubePriority.Items" xml:space="preserve">
-    <value>None</value>
+    <value>无</value>
   </data>
   <data name="CubePriority.Items1" xml:space="preserve">
-    <value>Balanced</value>
+    <value>平衡</value>
   </data>
   <data name="CubePriority.Items2" xml:space="preserve">
-    <value>Softcap</value>
+    <value>软上限</value>
   </data>
   <data name="CubePriority.Items3" xml:space="preserve">
-    <value>Power</value>
+    <value>力量</value>
   </data>
   <data name="CubePriority.Items4" xml:space="preserve">
-    <value>Toughness</value>
+    <value>韧性</value>
   </data>
   <data name="CubePriority.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 44</value>
@@ -3361,7 +3361,7 @@
     <value>26</value>
   </data>
   <data name="BlacklistAdd.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;BlacklistAdd.Name" xml:space="preserve">
     <value>BlacklistAdd</value>
@@ -3430,7 +3430,7 @@
     <value>29</value>
   </data>
   <data name="BlacklistRemove.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;BlacklistRemove.Name" xml:space="preserve">
     <value>BlacklistRemove</value>
@@ -3451,10 +3451,10 @@
     <value>24</value>
   </data>
   <data name="BlacklistBox.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="BlacklistBox.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="BlacklistBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>603, 165</value>
@@ -3505,7 +3505,7 @@
     <value>30</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Blacklisted Items</value>
+    <value>黑名单物品</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -3544,7 +3544,7 @@
     <value>24</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Priority Boosts</value>
+    <value>优先提升</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -3565,10 +3565,10 @@
     <value>24</value>
   </data>
   <data name="PriorityBoostBox.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="PriorityBoostBox.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="PriorityBoostBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 165</value>
@@ -3643,7 +3643,7 @@
     <value>20</value>
   </data>
   <data name="PriorityBoostAdd.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;PriorityBoostAdd.Name" xml:space="preserve">
     <value>PriorityBoostAdd</value>
@@ -3730,7 +3730,7 @@
     <value>23</value>
   </data>
   <data name="PriorityBoostRemove.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;PriorityBoostRemove.Name" xml:space="preserve">
     <value>PriorityBoostRemove</value>
@@ -3991,7 +3991,7 @@
     <value>45</value>
   </data>
   <data name="BoostAvgReset.Text" xml:space="preserve">
-    <value>Reset Boost Average</value>
+    <value>重置提升平均值</value>
   </data>
   <data name="&gt;&gt;BoostAvgReset.Name" xml:space="preserve">
     <value>BoostAvgReset</value>
@@ -4027,7 +4027,7 @@
     <value>37</value>
   </data>
   <data name="label38.Text" xml:space="preserve">
-    <value>Gear Boost Priority</value>
+    <value>装备提升优先级</value>
   </data>
   <data name="&gt;&gt;label38.Name" xml:space="preserve">
     <value>label38</value>
@@ -4222,7 +4222,7 @@
     <value>3</value>
   </data>
   <data name="tabPage4.Text" xml:space="preserve">
-    <value>Inventory</value>
+    <value>物品栏</value>
   </data>
   <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
     <value>tabPage4</value>
@@ -4270,10 +4270,10 @@
     <value>24</value>
   </data>
   <data name="TitanLoadout.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="TitanLoadout.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="TitanLoadout.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 44</value>
@@ -4330,7 +4330,7 @@
     <value>18</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>Loadout</value>
+    <value>装备配置</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -4363,7 +4363,7 @@
     <value>0</value>
   </data>
   <data name="SwapTitanLoadout.Text" xml:space="preserve">
-    <value>Swap Loadout for Titans</value>
+    <value>为泰坦切换装备配置</value>
   </data>
   <data name="&gt;&gt;SwapTitanLoadout.Name" xml:space="preserve">
     <value>SwapTitanLoadout</value>
@@ -4432,7 +4432,7 @@
     <value>17</value>
   </data>
   <data name="TitanRemove.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;TitanRemove.Name" xml:space="preserve">
     <value>TitanRemove</value>
@@ -4495,7 +4495,7 @@
     <value>14</value>
   </data>
   <data name="TitanAdd.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;TitanAdd.Name" xml:space="preserve">
     <value>TitanAdd</value>
@@ -4645,7 +4645,7 @@
     <value>34</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
-    <value>Titans to Manage</value>
+    <value>要管理的泰坦</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -4693,7 +4693,7 @@
     <value>14</value>
   </data>
   <data name="label64.Text" xml:space="preserve">
-    <value>Titan</value>
+    <value>泰坦</value>
   </data>
   <data name="label64.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -4726,7 +4726,7 @@
     <value>15</value>
   </data>
   <data name="label65.Text" xml:space="preserve">
-    <value>Version</value>
+    <value>版本</value>
   </data>
   <data name="label65.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -4975,7 +4975,7 @@
     <value>3</value>
   </data>
   <data name="KillTitan4.Text" xml:space="preserve">
-    <value>UUG THE UNMENTIONABLE</value>
+    <value>不可提到的黝黝寄</value>
   </data>
   <data name="&gt;&gt;KillTitan4.Name" xml:space="preserve">
     <value>KillTitan4</value>
@@ -5011,7 +5011,7 @@
     <value>2</value>
   </data>
   <data name="KillTitan3.Text" xml:space="preserve">
-    <value>Jake From Accounting</value>
+    <value>会计詹克</value>
   </data>
   <data name="&gt;&gt;KillTitan3.Name" xml:space="preserve">
     <value>KillTitan3</value>
@@ -5047,7 +5047,7 @@
     <value>1</value>
   </data>
   <data name="KillTitan2.Text" xml:space="preserve">
-    <value>Grand Corrupted Tree</value>
+    <value>大腐化树</value>
   </data>
   <data name="&gt;&gt;KillTitan2.Name" xml:space="preserve">
     <value>KillTitan2</value>
@@ -5083,7 +5083,7 @@
     <value>0</value>
   </data>
   <data name="KillTitan1.Text" xml:space="preserve">
-    <value>Gordon Ramsay Bolton</value>
+    <value>戈登·拉姆齐·波顿</value>
   </data>
   <data name="&gt;&gt;KillTitan1.Name" xml:space="preserve">
     <value>KillTitan1</value>
@@ -5119,7 +5119,7 @@
     <value>4</value>
   </data>
   <data name="KillTitan5.Text" xml:space="preserve">
-    <value>WALDERP</value>
+    <value>沃尔德</value>
   </data>
   <data name="&gt;&gt;KillTitan5.Name" xml:space="preserve">
     <value>KillTitan5</value>
@@ -5155,7 +5155,7 @@
     <value>5</value>
   </data>
   <data name="KillTitan6.Text" xml:space="preserve">
-    <value>THE BEAST</value>
+    <value>虫兽</value>
   </data>
   <data name="&gt;&gt;KillTitan6.Name" xml:space="preserve">
     <value>KillTitan6</value>
@@ -5191,7 +5191,7 @@
     <value>6</value>
   </data>
   <data name="KillTitan7.Text" xml:space="preserve">
-    <value>GREASY NERD</value>
+    <value>油腻的死宅</value>
   </data>
   <data name="&gt;&gt;KillTitan7.Name" xml:space="preserve">
     <value>KillTitan7</value>
@@ -5227,7 +5227,7 @@
     <value>7</value>
   </data>
   <data name="KillTitan8.Text" xml:space="preserve">
-    <value>THE GODMOTHER</value>
+    <value>教母</value>
   </data>
   <data name="&gt;&gt;KillTitan8.Name" xml:space="preserve">
     <value>KillTitan8</value>
@@ -5263,7 +5263,7 @@
     <value>8</value>
   </data>
   <data name="KillTitan9.Text" xml:space="preserve">
-    <value>THE EXILE</value>
+    <value>被流放者</value>
   </data>
   <data name="&gt;&gt;KillTitan9.Name" xml:space="preserve">
     <value>KillTitan9</value>
@@ -5299,7 +5299,7 @@
     <value>9</value>
   </data>
   <data name="KillTitan10.Text" xml:space="preserve">
-    <value>IT HUNGERS</value>
+    <value>饕餮</value>
   </data>
   <data name="&gt;&gt;KillTitan10.Name" xml:space="preserve">
     <value>KillTitan10</value>
@@ -5335,7 +5335,7 @@
     <value>10</value>
   </data>
   <data name="KillTitan11.Text" xml:space="preserve">
-    <value>ROCK LOBSTER</value>
+    <value>摇滚大虾</value>
   </data>
   <data name="&gt;&gt;KillTitan11.Name" xml:space="preserve">
     <value>KillTitan11</value>
@@ -5371,7 +5371,7 @@
     <value>11</value>
   </data>
   <data name="KillTitan12.Text" xml:space="preserve">
-    <value>AMALGAMATE</value>
+    <value>融合体</value>
   </data>
   <data name="&gt;&gt;KillTitan12.Name" xml:space="preserve">
     <value>KillTitan12</value>
@@ -5407,7 +5407,7 @@
     <value>12</value>
   </data>
   <data name="KillTitan13.Text" xml:space="preserve">
-    <value>TIPPI THE TUTORIAL MOUSE</value>
+    <value>教程之鼠提比</value>
   </data>
   <data name="&gt;&gt;KillTitan13.Name" xml:space="preserve">
     <value>KillTitan13</value>
@@ -5443,7 +5443,7 @@
     <value>13</value>
   </data>
   <data name="KillTitan14.Text" xml:space="preserve">
-    <value>THE TRAITOR</value>
+    <value>背叛者</value>
   </data>
   <data name="&gt;&gt;KillTitan14.Name" xml:space="preserve">
     <value>KillTitan14</value>
@@ -5950,7 +5950,7 @@
     <value>45</value>
   </data>
   <data name="LocateWalderp.Text" xml:space="preserve">
-    <value>Locate Walderp</value>
+    <value>定位沃尔德</value>
   </data>
   <data name="&gt;&gt;LocateWalderp.Name" xml:space="preserve">
     <value>LocateWalderp</value>
@@ -5986,7 +5986,7 @@
     <value>37</value>
   </data>
   <data name="label36.Text" xml:space="preserve">
-    <value>Combat Mode</value>
+    <value>战斗模式</value>
   </data>
   <data name="&gt;&gt;label36.Name" xml:space="preserve">
     <value>label36</value>
@@ -6004,19 +6004,19 @@
     <value>Left</value>
   </data>
   <data name="TitanCombatMode.Items" xml:space="preserve">
-    <value>Idle</value>
+    <value>待机</value>
   </data>
   <data name="TitanCombatMode.Items1" xml:space="preserve">
-    <value>Snipe</value>
+    <value>狙击</value>
   </data>
   <data name="TitanCombatMode.Items2" xml:space="preserve">
-    <value>Defensive</value>
+    <value>防御</value>
   </data>
   <data name="TitanCombatMode.Items3" xml:space="preserve">
-    <value>Offensive</value>
+    <value>进攻</value>
   </data>
   <data name="TitanCombatMode.Items4" xml:space="preserve">
-    <value>Auto-kill</value>
+    <value>自动击杀</value>
   </data>
   <data name="TitanCombatMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>151, 9</value>
@@ -6064,7 +6064,7 @@
     <value>41</value>
   </data>
   <data name="TitanBeastMode.Text" xml:space="preserve">
-    <value>Beast Mode</value>
+    <value>虫兽模式</value>
   </data>
   <data name="&gt;&gt;TitanBeastMode.Name" xml:space="preserve">
     <value>TitanBeastMode</value>
@@ -6133,7 +6133,7 @@
     <value>0</value>
   </data>
   <data name="ManageTitans.Text" xml:space="preserve">
-    <value>Manage Titans</value>
+    <value>管理泰坦</value>
   </data>
   <data name="&gt;&gt;ManageTitans.Name" xml:space="preserve">
     <value>ManageTitans</value>
@@ -6163,7 +6163,7 @@
     <value>1</value>
   </data>
   <data name="SwapTitanDiggers.Text" xml:space="preserve">
-    <value>Swap Diggers</value>
+    <value>切换掘金者</value>
   </data>
   <data name="&gt;&gt;SwapTitanDiggers.Name" xml:space="preserve">
     <value>SwapTitanDiggers</value>
@@ -6196,7 +6196,7 @@
     <value>2</value>
   </data>
   <data name="SwapTitanBeards.Text" xml:space="preserve">
-    <value>Swap Beards</value>
+    <value>切换胡子</value>
   </data>
   <data name="&gt;&gt;SwapTitanBeards.Name" xml:space="preserve">
     <value>SwapTitanBeards</value>
@@ -6286,7 +6286,7 @@
     <value>4</value>
   </data>
   <data name="tabPage5.Text" xml:space="preserve">
-    <value>Titans</value>
+    <value>泰坦</value>
   </data>
   <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
     <value>tabPage5</value>
@@ -6439,7 +6439,7 @@
     <value>49</value>
   </data>
   <data name="label32.Text" xml:space="preserve">
-    <value>Zones</value>
+    <value>区域</value>
   </data>
   <data name="&gt;&gt;label32.Name" xml:space="preserve">
     <value>label32</value>
@@ -6478,7 +6478,7 @@
     <value>28</value>
   </data>
   <data name="BlacklistRemoveEnemyButton.Text" xml:space="preserve">
-    <value>Remove Enemy</value>
+    <value>移除敌人</value>
   </data>
   <data name="&gt;&gt;BlacklistRemoveEnemyButton.Name" xml:space="preserve">
     <value>BlacklistRemoveEnemyButton</value>
@@ -6514,7 +6514,7 @@
     <value>31</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
-    <value>Enemies</value>
+    <value>敌人</value>
   </data>
   <data name="&gt;&gt;label31.Name" xml:space="preserve">
     <value>label31</value>
@@ -6547,7 +6547,7 @@
     <value>32</value>
   </data>
   <data name="BlacklistAddEnemyButton.Text" xml:space="preserve">
-    <value>Add Enemy</value>
+    <value>添加敌人</value>
   </data>
   <data name="&gt;&gt;BlacklistAddEnemyButton.Name" xml:space="preserve">
     <value>BlacklistAddEnemyButton</value>
@@ -6700,7 +6700,7 @@
     <value>0</value>
   </data>
   <data name="CombatActive.Text" xml:space="preserve">
-    <value>Combat Enabled</value>
+    <value>启用战斗</value>
   </data>
   <data name="&gt;&gt;CombatActive.Name" xml:space="preserve">
     <value>CombatActive</value>
@@ -6736,7 +6736,7 @@
     <value>4</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Combat Mode</value>
+    <value>战斗模式</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -6772,7 +6772,7 @@
     <value>6</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Target Zone</value>
+    <value>目标区域</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -6790,16 +6790,16 @@
     <value>Left</value>
   </data>
   <data name="ITOPODOptimizeMode.Items" xml:space="preserve">
-    <value>Disabled</value>
+    <value>禁用</value>
   </data>
   <data name="ITOPODOptimizeMode.Items1" xml:space="preserve">
-    <value>Default</value>
+    <value>默认</value>
   </data>
   <data name="ITOPODOptimizeMode.Items2" xml:space="preserve">
-    <value>PP</value>
+    <value>特权点</value>
   </data>
   <data name="ITOPODOptimizeMode.Items3" xml:space="preserve">
-    <value>EXP/AP</value>
+    <value>经验/任意点</value>
   </data>
   <data name="ITOPODOptimizeMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 136</value>
@@ -6847,7 +6847,7 @@
     <value>38</value>
   </data>
   <data name="label43.Text" xml:space="preserve">
-    <value>Optimization Mode</value>
+    <value>优化模式</value>
   </data>
   <data name="&gt;&gt;label43.Name" xml:space="preserve">
     <value>label43</value>
@@ -6865,19 +6865,19 @@
     <value>Left</value>
   </data>
   <data name="CombatMode.Items" xml:space="preserve">
-    <value>Idle</value>
+    <value>待机</value>
   </data>
   <data name="CombatMode.Items1" xml:space="preserve">
-    <value>Snipe</value>
+    <value>狙击</value>
   </data>
   <data name="CombatMode.Items2" xml:space="preserve">
-    <value>Defensive</value>
+    <value>防御</value>
   </data>
   <data name="CombatMode.Items3" xml:space="preserve">
-    <value>Offensive</value>
+    <value>进攻</value>
   </data>
   <data name="CombatMode.Items4" xml:space="preserve">
-    <value>One-shot</value>
+    <value>一击</value>
   </data>
   <data name="CombatMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 5</value>
@@ -6952,7 +6952,7 @@
     <value>13</value>
   </data>
   <data name="BeastMode.Text" xml:space="preserve">
-    <value>Beast Mode</value>
+    <value>虫兽模式</value>
   </data>
   <data name="&gt;&gt;BeastMode.Name" xml:space="preserve">
     <value>BeastMode</value>
@@ -6988,7 +6988,7 @@
     <value>2</value>
   </data>
   <data name="BossesOnly.Text" xml:space="preserve">
-    <value>Bosses Only</value>
+    <value>仅首领</value>
   </data>
   <data name="&gt;&gt;BossesOnly.Name" xml:space="preserve">
     <value>BossesOnly</value>
@@ -7024,7 +7024,7 @@
     <value>23</value>
   </data>
   <data name="ITOPODBeastMode.Text" xml:space="preserve">
-    <value>Beast Mode</value>
+    <value>虫兽模式</value>
   </data>
   <data name="&gt;&gt;ITOPODBeastMode.Name" xml:space="preserve">
     <value>ITOPODBeastMode</value>
@@ -7060,7 +7060,7 @@
     <value>12</value>
   </data>
   <data name="AllowFallthrough.Text" xml:space="preserve">
-    <value>Allow Fallthrough</value>
+    <value>允许自动降级</value>
   </data>
   <data name="&gt;&gt;AllowFallthrough.Name" xml:space="preserve">
     <value>AllowFallthrough</value>
@@ -7096,7 +7096,7 @@
     <value>15</value>
   </data>
   <data name="TargetITOPOD.Text" xml:space="preserve">
-    <value>ITOPOD</value>
+    <value>无尽之怒塔</value>
   </data>
   <data name="&gt;&gt;TargetITOPOD.Name" xml:space="preserve">
     <value>TargetITOPOD</value>
@@ -7132,7 +7132,7 @@
     <value>19</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
-    <value>Combat Mode</value>
+    <value>战斗模式</value>
   </data>
   <data name="&gt;&gt;label24.Name" xml:space="preserve">
     <value>label24</value>
@@ -7150,10 +7150,10 @@
     <value>Left</value>
   </data>
   <data name="ITOPODCombatMode.Items" xml:space="preserve">
-    <value>Idle</value>
+    <value>待机</value>
   </data>
   <data name="ITOPODCombatMode.Items1" xml:space="preserve">
-    <value>Manual</value>
+    <value>手动</value>
   </data>
   <data name="ITOPODCombatMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>384, 94</value>
@@ -7198,7 +7198,7 @@
     <value>53</value>
   </data>
   <data name="ITOPODAutoPush.Text" xml:space="preserve">
-    <value>Auto Push</value>
+    <value>自动推进</value>
   </data>
   <data name="&gt;&gt;ITOPODAutoPush.Name" xml:space="preserve">
     <value>ITOPODAutoPush</value>
@@ -7258,7 +7258,7 @@
     <value>5</value>
   </data>
   <data name="tabPage6.Text" xml:space="preserve">
-    <value>Adventure</value>
+    <value>冒险</value>
   </data>
   <data name="&gt;&gt;tabPage6.Name" xml:space="preserve">
     <value>tabPage6</value>
@@ -7354,7 +7354,7 @@
     <value>24</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>Loadout</value>
+    <value>装备配置</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -7387,7 +7387,7 @@
     <value>20</value>
   </data>
   <data name="GoldLoadoutAdd.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;GoldLoadoutAdd.Name" xml:space="preserve">
     <value>GoldLoadoutAdd</value>
@@ -7408,10 +7408,10 @@
     <value>24</value>
   </data>
   <data name="GoldLoadout.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="GoldLoadout.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="GoldLoadout.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 42</value>
@@ -7462,7 +7462,7 @@
     <value>23</value>
   </data>
   <data name="GoldLoadoutRemove.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;GoldLoadoutRemove.Name" xml:space="preserve">
     <value>GoldLoadoutRemove</value>
@@ -7576,7 +7576,7 @@
     <value>33</value>
   </data>
   <data name="ResetTitanStatus.Text" xml:space="preserve">
-    <value>Reset Titan Status</value>
+    <value>重置泰坦状态</value>
   </data>
   <data name="&gt;&gt;ResetTitanStatus.Name" xml:space="preserve">
     <value>ResetTitanStatus</value>
@@ -7615,7 +7615,7 @@
     <value>32</value>
   </data>
   <data name="label21.Text" xml:space="preserve">
-    <value>Titans to Gold Snipe</value>
+    <value>黄金狙击泰坦</value>
   </data>
   <data name="&gt;&gt;label21.Name" xml:space="preserve">
     <value>label21</value>
@@ -7729,7 +7729,7 @@
     <value>35</value>
   </data>
   <data name="GoldSnipeNow.Text" xml:space="preserve">
-    <value>Gold Snipe Now</value>
+    <value>立即黄金狙击</value>
   </data>
   <data name="&gt;&gt;GoldSnipeNow.Name" xml:space="preserve">
     <value>GoldSnipeNow</value>
@@ -7765,7 +7765,7 @@
     <value>38</value>
   </data>
   <data name="CBlockMode.Text" xml:space="preserve">
-    <value>CBlock Mode</value>
+    <value>CBlock 模式</value>
   </data>
   <data name="&gt;&gt;CBlockMode.Name" xml:space="preserve">
     <value>CBlockMode</value>
@@ -7801,7 +7801,7 @@
     <value>28</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>Resnipe Time</value>
+    <value>重新狙击时间</value>
   </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
@@ -7837,7 +7837,7 @@
     <value>26</value>
   </data>
   <data name="ManageGold.Text" xml:space="preserve">
-    <value>Enable Gold Management</value>
+    <value>启用黄金管理</value>
   </data>
   <data name="&gt;&gt;ManageGold.Name" xml:space="preserve">
     <value>ManageGold</value>
@@ -8068,7 +8068,7 @@
     <value>6</value>
   </data>
   <data name="tabPage7.Text" xml:space="preserve">
-    <value>Gold</value>
+    <value>黄金</value>
   </data>
   <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
     <value>tabPage7</value>
@@ -8122,7 +8122,7 @@
     <value>40</value>
   </data>
   <data name="FiftyItemMinors.Text" xml:space="preserve">
-    <value>Roll Fifty Item Minors</value>
+    <value>刷新 50 物品次要任务</value>
   </data>
   <data name="&gt;&gt;FiftyItemMinors.Name" xml:space="preserve">
     <value>FiftyItemMinors</value>
@@ -8158,7 +8158,7 @@
     <value>9</value>
   </data>
   <data name="AbandonMinors.Text" xml:space="preserve">
-    <value>Abandon Minor Quests for Major at Threshold (%)</value>
+    <value>到达阈值(%)时放弃次要任务换主要任务</value>
   </data>
   <data name="&gt;&gt;AbandonMinors.Name" xml:space="preserve">
     <value>AbandonMinors</value>
@@ -8230,7 +8230,7 @@
     <value>11</value>
   </data>
   <data name="ManualMinor.Text" xml:space="preserve">
-    <value>Manual Minors</value>
+    <value>手动次要任务</value>
   </data>
   <data name="&gt;&gt;ManualMinor.Name" xml:space="preserve">
     <value>ManualMinor</value>
@@ -8266,7 +8266,7 @@
     <value>13</value>
   </data>
   <data name="ButterMinors.Text" xml:space="preserve">
-    <value>Use Butter on Minors</value>
+    <value>对次要任务使用黄油</value>
   </data>
   <data name="&gt;&gt;ButterMinors.Name" xml:space="preserve">
     <value>ButterMinors</value>
@@ -8371,7 +8371,7 @@
     <value>6</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>Combat Mode</value>
+    <value>战斗模式</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
@@ -8389,19 +8389,19 @@
     <value>Left</value>
   </data>
   <data name="QuestCombatMode.Items" xml:space="preserve">
-    <value>Idle</value>
+    <value>待机</value>
   </data>
   <data name="QuestCombatMode.Items1" xml:space="preserve">
-    <value>Snipe</value>
+    <value>狙击</value>
   </data>
   <data name="QuestCombatMode.Items2" xml:space="preserve">
-    <value>Defensive</value>
+    <value>防御</value>
   </data>
   <data name="QuestCombatMode.Items3" xml:space="preserve">
-    <value>Offensive</value>
+    <value>进攻</value>
   </data>
   <data name="QuestCombatMode.Items4" xml:space="preserve">
-    <value>One-shot</value>
+    <value>一击</value>
   </data>
   <data name="QuestCombatMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>151, 5</value>
@@ -8449,7 +8449,7 @@
     <value>38</value>
   </data>
   <data name="QuestBeastMode.Text" xml:space="preserve">
-    <value>Beast Mode</value>
+    <value>虫兽模式</value>
   </data>
   <data name="&gt;&gt;QuestBeastMode.Name" xml:space="preserve">
     <value>QuestBeastMode</value>
@@ -8518,7 +8518,7 @@
     <value>0</value>
   </data>
   <data name="ManageQuests.Text" xml:space="preserve">
-    <value>Auto Quest</value>
+    <value>自动任务</value>
   </data>
   <data name="&gt;&gt;ManageQuests.Name" xml:space="preserve">
     <value>ManageQuests</value>
@@ -8560,7 +8560,7 @@
     <value>1</value>
   </data>
   <data name="AllowMajor.Text" xml:space="preserve">
-    <value>Allow Major Quests</value>
+    <value>允许主要任务</value>
   </data>
   <data name="&gt;&gt;AllowMajor.Name" xml:space="preserve">
     <value>AllowMajor</value>
@@ -8596,7 +8596,7 @@
     <value>12</value>
   </data>
   <data name="ButterMajors.Text" xml:space="preserve">
-    <value>Use Butter on Majors</value>
+    <value>对主要任务使用黄油</value>
   </data>
   <data name="&gt;&gt;ButterMajors.Name" xml:space="preserve">
     <value>ButterMajors</value>
@@ -8659,7 +8659,7 @@
     <value>41</value>
   </data>
   <data name="QuestsFullBank.Text" xml:space="preserve">
-    <value>Start Major Quests with a full Bank</value>
+    <value>满任务库存时开始主要任务</value>
   </data>
   <data name="&gt;&gt;QuestsFullBank.Name" xml:space="preserve">
     <value>QuestsFullBank</value>
@@ -8722,10 +8722,10 @@
     <value>24</value>
   </data>
   <data name="QuestLoadoutBox.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="QuestLoadoutBox.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="QuestLoadoutBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 44</value>
@@ -8800,7 +8800,7 @@
     <value>32</value>
   </data>
   <data name="QuestAddButton.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;QuestAddButton.Name" xml:space="preserve">
     <value>QuestAddButton</value>
@@ -8839,7 +8839,7 @@
     <value>35</value>
   </data>
   <data name="QuestRemoveButton.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;QuestRemoveButton.Name" xml:space="preserve">
     <value>QuestRemoveButton</value>
@@ -8884,7 +8884,7 @@
     <value>36</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
-    <value>Loadout</value>
+    <value>装备配置</value>
   </data>
   <data name="&gt;&gt;label30.Name" xml:space="preserve">
     <value>label30</value>
@@ -8920,7 +8920,7 @@
     <value>37</value>
   </data>
   <data name="ManageQuestLoadout.Text" xml:space="preserve">
-    <value>Swap Loadout for Quests</value>
+    <value>为任务切换装备配置</value>
   </data>
   <data name="&gt;&gt;ManageQuestLoadout.Name" xml:space="preserve">
     <value>ManageQuestLoadout</value>
@@ -9112,7 +9112,7 @@
     <value>7</value>
   </data>
   <data name="tabPage8.Text" xml:space="preserve">
-    <value>Quests</value>
+    <value>任务</value>
   </data>
   <data name="&gt;&gt;tabPage8.Name" xml:space="preserve">
     <value>tabPage8</value>
@@ -9160,7 +9160,7 @@
     <value>43</value>
   </data>
   <data name="RemoveWishBlacklistButton.Text" xml:space="preserve">
-    <value>Remove Wish</value>
+    <value>移除许愿</value>
   </data>
   <data name="&gt;&gt;RemoveWishBlacklistButton.Name" xml:space="preserve">
     <value>RemoveWishBlacklistButton</value>
@@ -9181,10 +9181,10 @@
     <value>24</value>
   </data>
   <data name="WishPriority.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="WishPriority.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="WishPriority.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 156</value>
@@ -9265,7 +9265,7 @@
     <value>42</value>
   </data>
   <data name="label39.Text" xml:space="preserve">
-    <value>Blacklist Wishes</value>
+    <value>许愿黑名单</value>
   </data>
   <data name="&gt;&gt;label39.Name" xml:space="preserve">
     <value>label39</value>
@@ -9328,7 +9328,7 @@
     <value>39</value>
   </data>
   <data name="AddWishBlacklistButton.Text" xml:space="preserve">
-    <value>Add Wish</value>
+    <value>添加许愿</value>
   </data>
   <data name="&gt;&gt;AddWishBlacklistButton.Name" xml:space="preserve">
     <value>AddWishBlacklistButton</value>
@@ -9349,10 +9349,10 @@
     <value>24</value>
   </data>
   <data name="WishBlacklist.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="WishBlacklist.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="WishBlacklist.Location" type="System.Drawing.Point, System.Drawing">
     <value>604, 156</value>
@@ -9397,7 +9397,7 @@
     <value>26</value>
   </data>
   <data name="AddWishButton.Text" xml:space="preserve">
-    <value>Add Wish</value>
+    <value>添加许愿</value>
   </data>
   <data name="&gt;&gt;AddWishButton.Name" xml:space="preserve">
     <value>AddWishButton</value>
@@ -9436,7 +9436,7 @@
     <value>59</value>
   </data>
   <data name="ManageWishes.Text" xml:space="preserve">
-    <value>Manage Wishes</value>
+    <value>管理许愿</value>
   </data>
   <data name="&gt;&gt;ManageWishes.Name" xml:space="preserve">
     <value>ManageWishes</value>
@@ -9475,7 +9475,7 @@
     <value>60</value>
   </data>
   <data name="label53.Text" xml:space="preserve">
-    <value>Limit to</value>
+    <value>限制为</value>
   </data>
   <data name="&gt;&gt;label53.Name" xml:space="preserve">
     <value>label53</value>
@@ -9535,7 +9535,7 @@
     <value>62</value>
   </data>
   <data name="label54.Text" xml:space="preserve">
-    <value>slots</value>
+    <value>槽位</value>
   </data>
   <data name="&gt;&gt;label54.Name" xml:space="preserve">
     <value>label54</value>
@@ -9640,7 +9640,7 @@
     <value>30</value>
   </data>
   <data name="label19.Text" xml:space="preserve">
-    <value>Priority Wishes</value>
+    <value>优先许愿</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
@@ -9673,7 +9673,7 @@
     <value>36</value>
   </data>
   <data name="WeakPriorities.Text" xml:space="preserve">
-    <value>Soft Priorities</value>
+    <value>软优先级</value>
   </data>
   <data name="&gt;&gt;WeakPriorities.Name" xml:space="preserve">
     <value>WeakPriorities</value>
@@ -9790,7 +9790,7 @@
     <value>33</value>
   </data>
   <data name="RemoveWishButton.Text" xml:space="preserve">
-    <value>Remove Wish</value>
+    <value>移除许愿</value>
   </data>
   <data name="&gt;&gt;RemoveWishButton.Name" xml:space="preserve">
     <value>RemoveWishButton</value>
@@ -9913,7 +9913,7 @@
     <value>47</value>
   </data>
   <data name="label50.Text" xml:space="preserve">
-    <value>Energy %</value>
+    <value>能量 %</value>
   </data>
   <data name="&gt;&gt;label50.Name" xml:space="preserve">
     <value>label50</value>
@@ -9979,7 +9979,7 @@
     <value>49</value>
   </data>
   <data name="label51.Text" xml:space="preserve">
-    <value>Magic %</value>
+    <value>魔力 %</value>
   </data>
   <data name="&gt;&gt;label51.Name" xml:space="preserve">
     <value>label51</value>
@@ -10075,7 +10075,7 @@
     <value>51</value>
   </data>
   <data name="label52.Text" xml:space="preserve">
-    <value>Resource 3 %</value>
+    <value>资源3 %</value>
   </data>
   <data name="&gt;&gt;label52.Name" xml:space="preserve">
     <value>label52</value>
@@ -10150,7 +10150,7 @@
     <value>45</value>
   </data>
   <data name="label48.Text" xml:space="preserve">
-    <value>Allocation Mode</value>
+    <value>分配模式</value>
   </data>
   <data name="&gt;&gt;label48.Name" xml:space="preserve">
     <value>label48</value>
@@ -10168,16 +10168,16 @@
     <value>Left, Right</value>
   </data>
   <data name="WishMode.Items" xml:space="preserve">
-    <value>Default</value>
+    <value>默认</value>
   </data>
   <data name="WishMode.Items1" xml:space="preserve">
-    <value>Cheapest</value>
+    <value>最便宜</value>
   </data>
   <data name="WishMode.Items2" xml:space="preserve">
-    <value>Fastest</value>
+    <value>最快</value>
   </data>
   <data name="WishMode.Items3" xml:space="preserve">
-    <value>Balanced</value>
+    <value>平衡</value>
   </data>
   <data name="WishMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>167, 5</value>
@@ -10459,7 +10459,7 @@
     <value>8</value>
   </data>
   <data name="tabPage9.Text" xml:space="preserve">
-    <value>Wishes</value>
+    <value>许愿</value>
   </data>
   <data name="&gt;&gt;tabPage9.Name" xml:space="preserve">
     <value>tabPage9</value>
@@ -10510,7 +10510,7 @@
     <value>7</value>
   </data>
   <data name="AutoDailySpin.Text" xml:space="preserve">
-    <value>Auto Daily Spin</value>
+    <value>自动每日转盘</value>
   </data>
   <data name="&gt;&gt;AutoDailySpin.Name" xml:space="preserve">
     <value>AutoDailySpin</value>
@@ -10603,7 +10603,7 @@
     <value>37</value>
   </data>
   <data name="label47.Text" xml:space="preserve">
-    <value>Daycare Threshold (%)</value>
+    <value>日托阈值 (%)</value>
   </data>
   <data name="&gt;&gt;label47.Name" xml:space="preserve">
     <value>label47</value>
@@ -10639,7 +10639,7 @@
     <value>13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Money Pit Threshold</value>
+    <value>钱坑阈值</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -10672,7 +10672,7 @@
     <value>8</value>
   </data>
   <data name="AutoMoneyPit.Text" xml:space="preserve">
-    <value>Auto Money Pit</value>
+    <value>自动钱坑</value>
   </data>
   <data name="&gt;&gt;AutoMoneyPit.Name" xml:space="preserve">
     <value>AutoMoneyPit</value>
@@ -10705,7 +10705,7 @@
     <value>35</value>
   </data>
   <data name="PredictMoneyPit.Text" xml:space="preserve">
-    <value>Predict Money Pit Outcome</value>
+    <value>预测钱坑结果</value>
   </data>
   <data name="&gt;&gt;PredictMoneyPit.Name" xml:space="preserve">
     <value>PredictMoneyPit</value>
@@ -10738,7 +10738,7 @@
     <value>36</value>
   </data>
   <data name="MoneyPitDaycare.Text" xml:space="preserve">
-    <value>Put Items out of Daycare</value>
+    <value>从日托取出物品</value>
   </data>
   <data name="&gt;&gt;MoneyPitDaycare.Name" xml:space="preserve">
     <value>MoneyPitDaycare</value>
@@ -10771,7 +10771,7 @@
     <value>43</value>
   </data>
   <data name="SwapPitDiggers.Text" xml:space="preserve">
-    <value>Swap Diggers and Beards</value>
+    <value>切换掘金者和胡子</value>
   </data>
   <data name="&gt;&gt;SwapPitDiggers.Name" xml:space="preserve">
     <value>SwapPitDiggers</value>
@@ -10879,7 +10879,7 @@
     <value>28</value>
   </data>
   <data name="ShockwaveAdd.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;ShockwaveAdd.Name" xml:space="preserve">
     <value>ShockwaveAdd</value>
@@ -10918,7 +10918,7 @@
     <value>27</value>
   </data>
   <data name="label46.Text" xml:space="preserve">
-    <value>Items for Shockwave</value>
+    <value>冲击波物品</value>
   </data>
   <data name="&gt;&gt;label46.Name" xml:space="preserve">
     <value>label46</value>
@@ -10939,10 +10939,10 @@
     <value>24</value>
   </data>
   <data name="ShockwaveBox.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="ShockwaveBox.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="ShockwaveBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 42</value>
@@ -11041,7 +11041,7 @@
     <value>26</value>
   </data>
   <data name="ShockwaveRemove.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;ShockwaveRemove.Name" xml:space="preserve">
     <value>ShockwaveRemove</value>
@@ -11305,7 +11305,7 @@
     <value>9</value>
   </data>
   <data name="tabPage10.Text" xml:space="preserve">
-    <value>The Pit</value>
+    <value>钱坑</value>
   </data>
   <data name="&gt;&gt;tabPage10.Name" xml:space="preserve">
     <value>tabPage10</value>
@@ -11344,10 +11344,10 @@
     <value>24</value>
   </data>
   <data name="CardSortList.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="CardSortList.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="CardSortList.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
@@ -11395,7 +11395,7 @@
     <value>44</value>
   </data>
   <data name="label37.Text" xml:space="preserve">
-    <value>Sort Options</value>
+    <value>排序选项</value>
   </data>
   <data name="&gt;&gt;label37.Name" xml:space="preserve">
     <value>label37</value>
@@ -11455,7 +11455,7 @@
     <value>42</value>
   </data>
   <data name="CardSortAdd.Text" xml:space="preserve">
-    <value>Add Sort</value>
+    <value>添加排序</value>
   </data>
   <data name="&gt;&gt;CardSortAdd.Name" xml:space="preserve">
     <value>CardSortAdd</value>
@@ -11542,7 +11542,7 @@
     <value>43</value>
   </data>
   <data name="CardSortRemove.Text" xml:space="preserve">
-    <value>Remove Sort</value>
+    <value>移除排序</value>
   </data>
   <data name="&gt;&gt;CardSortRemove.Name" xml:space="preserve">
     <value>CardSortRemove</value>
@@ -11683,7 +11683,7 @@
     <value>41</value>
   </data>
   <data name="label41.Text" xml:space="preserve">
-    <value>Trash Settings</value>
+    <value>丢弃设置</value>
   </data>
   <data name="&gt;&gt;label41.Name" xml:space="preserve">
     <value>label41</value>
@@ -11722,7 +11722,7 @@
     <value>2</value>
   </data>
   <data name="TrashCards.Text" xml:space="preserve">
-    <value>Auto Trash Cards</value>
+    <value>自动丢弃卡牌</value>
   </data>
   <data name="&gt;&gt;TrashCards.Name" xml:space="preserve">
     <value>TrashCards</value>
@@ -11758,7 +11758,7 @@
     <value>46</value>
   </data>
   <data name="TrashProtectedCards.Text" xml:space="preserve">
-    <value>Trash Protected Cards</value>
+    <value>丢弃已保护卡牌</value>
   </data>
   <data name="&gt;&gt;TrashProtectedCards.Name" xml:space="preserve">
     <value>TrashProtectedCards</value>
@@ -11830,7 +11830,7 @@
     <value>6</value>
   </data>
   <data name="AutoCastCards.Text" xml:space="preserve">
-    <value>Auto Cast Cards</value>
+    <value>自动打出卡牌</value>
   </data>
   <data name="&gt;&gt;AutoCastCards.Name" xml:space="preserve">
     <value>AutoCastCards</value>
@@ -11866,7 +11866,7 @@
     <value>7</value>
   </data>
   <data name="CastProtectedCards.Text" xml:space="preserve">
-    <value>Cast Protected Cards</value>
+    <value>打出已保护卡牌</value>
   </data>
   <data name="&gt;&gt;CastProtectedCards.Name" xml:space="preserve">
     <value>CastProtectedCards</value>
@@ -11920,7 +11920,7 @@
     <value>0</value>
   </data>
   <data name="BalanceMayo.Text" xml:space="preserve">
-    <value>Manage Mayo</value>
+    <value>管理蛋黄酱</value>
   </data>
   <data name="&gt;&gt;BalanceMayo.Name" xml:space="preserve">
     <value>BalanceMayo</value>
@@ -11965,7 +11965,7 @@
     <value>35</value>
   </data>
   <data name="label40.Text" xml:space="preserve">
-    <value>Sort Order</value>
+    <value>排序顺序</value>
   </data>
   <data name="&gt;&gt;label40.Name" xml:space="preserve">
     <value>label40</value>
@@ -11998,7 +11998,7 @@
     <value>22</value>
   </data>
   <data name="SortCards.Text" xml:space="preserve">
-    <value>Sort Cards</value>
+    <value>排序卡牌</value>
   </data>
   <data name="&gt;&gt;SortCards.Name" xml:space="preserve">
     <value>SortCards</value>
@@ -12673,7 +12673,7 @@
     <value>58</value>
   </data>
   <data name="label62.Text" xml:space="preserve">
-    <value>QP Gain</value>
+    <value>怪癖点获取</value>
   </data>
   <data name="label62.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12712,7 +12712,7 @@
     <value>47</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
-    <value>Energy NGU Speed</value>
+    <value>能量 NGU 速度</value>
   </data>
   <data name="label28.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12751,7 +12751,7 @@
     <value>46</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
-    <value>Magic NGU Speed</value>
+    <value>魔力 NGU 速度</value>
   </data>
   <data name="label23.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12790,7 +12790,7 @@
     <value>48</value>
   </data>
   <data name="label29.Text" xml:space="preserve">
-    <value>Wandoos Speed</value>
+    <value>Wandoos 速度</value>
   </data>
   <data name="label29.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12829,7 +12829,7 @@
     <value>49</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
-    <value>Augment Speed</value>
+    <value>升变速度</value>
   </data>
   <data name="label33.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12868,7 +12868,7 @@
     <value>50</value>
   </data>
   <data name="label34.Text" xml:space="preserve">
-    <value>Time Machine Speed</value>
+    <value>时间机器速度</value>
   </data>
   <data name="label34.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12904,7 +12904,7 @@
     <value>51</value>
   </data>
   <data name="label55.Text" xml:space="preserve">
-    <value>Hack Speed</value>
+    <value>黑客速度</value>
   </data>
   <data name="label55.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12943,7 +12943,7 @@
     <value>45</value>
   </data>
   <data name="label22.Text" xml:space="preserve">
-    <value>Wish Speed</value>
+    <value>许愿速度</value>
   </data>
   <data name="label22.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -12982,7 +12982,7 @@
     <value>52</value>
   </data>
   <data name="label56.Text" xml:space="preserve">
-    <value>Attack/Defense</value>
+    <value>攻击/防御</value>
   </data>
   <data name="label56.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13021,7 +13021,7 @@
     <value>53</value>
   </data>
   <data name="label57.Text" xml:space="preserve">
-    <value>Adventure Stats</value>
+    <value>冒险属性</value>
   </data>
   <data name="label57.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13060,7 +13060,7 @@
     <value>54</value>
   </data>
   <data name="label58.Text" xml:space="preserve">
-    <value>Drop Chance</value>
+    <value>掉落率</value>
   </data>
   <data name="label58.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13099,7 +13099,7 @@
     <value>55</value>
   </data>
   <data name="label59.Text" xml:space="preserve">
-    <value>Gold Drops</value>
+    <value>黄金掉落</value>
   </data>
   <data name="label59.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13138,7 +13138,7 @@
     <value>56</value>
   </data>
   <data name="label60.Text" xml:space="preserve">
-    <value>Daycare Speed</value>
+    <value>日托速度</value>
   </data>
   <data name="label60.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13177,7 +13177,7 @@
     <value>57</value>
   </data>
   <data name="label61.Text" xml:space="preserve">
-    <value>PP Gain</value>
+    <value>特权点获取</value>
   </data>
   <data name="label61.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13459,7 +13459,7 @@
     <value>38</value>
   </data>
   <data name="label17.Text" xml:space="preserve">
-    <value>Cost</value>
+    <value>花费</value>
   </data>
   <data name="label17.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13501,7 +13501,7 @@
     <value>37</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>Rarity</value>
+    <value>稀有度</value>
   </data>
   <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13540,7 +13540,7 @@
     <value>36</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Card Type</value>
+    <value>卡牌类型</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -13633,7 +13633,7 @@
     <value>10</value>
   </data>
   <data name="tabPage11.Text" xml:space="preserve">
-    <value>Cards</value>
+    <value>卡牌</value>
   </data>
   <data name="&gt;&gt;tabPage11.Name" xml:space="preserve">
     <value>tabPage11</value>
@@ -13720,7 +13720,7 @@
     <value>34</value>
   </data>
   <data name="CookingRemoveButton.Text" xml:space="preserve">
-    <value>Remove Item</value>
+    <value>移除物品</value>
   </data>
   <data name="&gt;&gt;CookingRemoveButton.Name" xml:space="preserve">
     <value>CookingRemoveButton</value>
@@ -13741,10 +13741,10 @@
     <value>24</value>
   </data>
   <data name="CookingLoadoutBox.Items" xml:space="preserve">
-    <value>test</value>
+    <value>测试</value>
   </data>
   <data name="CookingLoadoutBox.Items1" xml:space="preserve">
-    <value>test2</value>
+    <value>测试2</value>
   </data>
   <data name="CookingLoadoutBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 44</value>
@@ -13789,7 +13789,7 @@
     <value>31</value>
   </data>
   <data name="CookingAddButton.Text" xml:space="preserve">
-    <value>Add Item</value>
+    <value>添加物品</value>
   </data>
   <data name="&gt;&gt;CookingAddButton.Name" xml:space="preserve">
     <value>CookingAddButton</value>
@@ -13834,7 +13834,7 @@
     <value>35</value>
   </data>
   <data name="label42.Text" xml:space="preserve">
-    <value>Loadout</value>
+    <value>装备配置</value>
   </data>
   <data name="&gt;&gt;label42.Name" xml:space="preserve">
     <value>label42</value>
@@ -13870,7 +13870,7 @@
     <value>26</value>
   </data>
   <data name="ManageCookingLoadout.Text" xml:space="preserve">
-    <value>Swap Loadout for Cooking</value>
+    <value>为烹饪切换装备配置</value>
   </data>
   <data name="&gt;&gt;ManageCookingLoadout.Name" xml:space="preserve">
     <value>ManageCookingLoadout</value>
@@ -14032,7 +14032,7 @@
     <value>25</value>
   </data>
   <data name="ManageCooking.Text" xml:space="preserve">
-    <value>Manage Cooking</value>
+    <value>管理烹饪</value>
   </data>
   <data name="&gt;&gt;ManageCooking.Name" xml:space="preserve">
     <value>ManageCooking</value>
@@ -14092,7 +14092,7 @@
     <value>11</value>
   </data>
   <data name="tabPage12.Text" xml:space="preserve">
-    <value>Cooking</value>
+    <value>烹饪</value>
   </data>
   <data name="&gt;&gt;tabPage12.Name" xml:space="preserve">
     <value>tabPage12</value>
@@ -14173,7 +14173,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Injector Settings</value>
+    <value>注入器设置</value>
   </data>
   <data name="&gt;&gt;invPrioErrorProvider.Name" xml:space="preserve">
     <value>invPrioErrorProvider</value>

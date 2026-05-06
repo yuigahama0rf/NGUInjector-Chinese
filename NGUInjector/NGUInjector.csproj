@@ -10,6 +10,8 @@
     <RootNamespace>NGUInjector</RootNamespace>
     <AssemblyName>NGUInjector</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <GenerateSatelliteAssembliesForCore>true</GenerateSatelliteAssembliesForCore>
     <FileAlignment>512</FileAlignment>
     <Deterministic>false</Deterministic>
     <TargetFrameworkProfile />
@@ -38,34 +40,43 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Games\Steam\steamapps\common\NGU IDLE\NGUIdle_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.XML" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\Games\Steam\steamapps\common\NGU IDLE\NGUIdle_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>$(NuGetPackageRoot)/unityengine.modules/2021.3.33/lib/net45/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\..\..\Games\Steam\steamapps\common\NGU IDLE\NGUIdle_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>$(NuGetPackageRoot)/unityengine.modules/2021.3.33/lib/net45/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\..\..\..\..\Games\Steam\steamapps\common\NGU IDLE\NGUIdle_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>$(NuGetPackageRoot)/unityengine.modules/2021.3.33/lib/net45/UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>..\..\..\..\..\..\Games\Steam\steamapps\common\NGU IDLE\NGUIdle_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>$(NuGetPackageRoot)/unityengine.modules/2021.3.33/lib/net45/UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>..\..\..\..\..\..\Games\Steam\steamapps\common\NGU IDLE\NGUIdle_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>$(NuGetPackageRoot)/unityengine.modules/2021.3.33/lib/net45/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(NuGetPackageRoot)/unityengine.modules/2021.3.33/lib/net45/UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>..\..\..\..\..\..\Games\Steam\steamapps\common\NGU IDLE\NGUIdle_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>$(NuGetPackageRoot)/defiant_zombie.ksp.skeleton.unityengine.ui/1.11.2/lib/UnityEngine.UI.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="UnityEngine.Modules" Version="2021.3.33">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Defiant_Zombie.KSP.Skeleton.UnityEngine.UI" Version="1.11.2">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllocationProfiles\Breakpoints\BaseBreakpoints.cs" />
@@ -127,6 +138,9 @@
     <Compile Include="SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SettingsForm.StaticResources.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SimpleJson.cs" />
     <Compile Include="Managers\YggdrasilManager.cs" />
   </ItemGroup>
@@ -145,24 +159,22 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="SettingsForm.dje.resx">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SettingsForm.resx">
-      <DependentUpon>SettingsForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>rmdir /S /Q dist
-md dist
-xcopy /E /I inject dist\injector
-copy NGUInjector.dll dist\injector
-copy inject.bat dist\
-xcopy /E /I $(ProjectDir)SampleProfiles dist\sampleprofiles</PostBuildEvent>
-  </PropertyGroup>
+  <Target Name="CreateDist" AfterTargets="Build">
+    <ItemGroup>
+      <InjectFiles Include="$(ProjectDir)inject/**/*.*" />
+      <SampleProfileFiles Include="$(ProjectDir)SampleProfiles/**/*.*" />
+    </ItemGroup>
+    <RemoveDir Directories="$(TargetDir)dist" />
+    <MakeDir Directories="$(TargetDir)dist/injector" />
+    <MakeDir Directories="$(TargetDir)dist/sampleprofiles" />
+    <Copy SourceFiles="@(InjectFiles)"
+          DestinationFiles="@(InjectFiles->'$(TargetDir)dist/injector/%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(TargetDir)dist/injector" />
+    <Copy SourceFiles="$(ProjectDir)inject.bat" DestinationFolder="$(TargetDir)dist" />
+    <Copy SourceFiles="@(SampleProfileFiles)"
+          DestinationFiles="@(SampleProfileFiles->'$(TargetDir)dist/sampleprofiles/%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
 </Project>

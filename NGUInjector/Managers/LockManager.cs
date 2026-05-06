@@ -266,21 +266,21 @@ namespace NGUInjector.Managers
             switch (currentLock)
             {
                 case LockType.Cooking:
-                    return "Cooking";
+                    return "烹饪";
                 case LockType.Gold:
-                    return "Gold";
+                    return "黄金";
                 case LockType.MoneyPit:
-                    return "Money Pit";
+                    return "钱坑";
                 case LockType.None:
-                    return "Default";
+                    return "默认";
                 case LockType.Quest:
-                    return "Quest";
+                    return "任务";
                 case LockType.Titan:
-                    return "Titan";
+                    return "泰坦";
                 case LockType.Yggdrasil:
-                    return "Yggdrasil";
+                    return "世界树";
             }
-            return "Unknown";
+            return "未知";
         }
     }
 }

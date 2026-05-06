@@ -16,15 +16,15 @@ namespace NGUInjector.Managers
 
         public static readonly Dictionary<int, string> rarityList = new Dictionary<int, string>
         {
-            { -1, "Don't trash" },
-            { 0, "Crappy" },
-            { 1, "Bad" },
-            { 2, "Meh" },
-            { 3, "Okay" },
-            { 4, "Good" },
-            { 5, "Great" },
-            { 6, "Hot Damn" },
-            { 7, "BIG CHONKER" }
+            { -1, "不丢弃" },
+            { 0, "劣等" },
+            { 1, "较差" },
+            { 2, "一般" },
+            { 3, "尚可" },
+            { 4, "较好" },
+            { 5, "很好" },
+            { 6, "超棒" },
+            { 7, "巨大" }
         };
 
         private static List<Card> Cards => _character.cards.cards;
