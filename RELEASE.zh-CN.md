@@ -1,4 +1,4 @@
-# NGUInjector 中文兼容版 4.1.7-cn.4
+# NGUInjector 中文兼容版 4.1.7-cn.5
 
 本版本基于原项目 NGUInjector 4.1.7 制作，面向 Steam 版 NGU IDLE 汉化环境。
 
@@ -7,19 +7,19 @@
 发布包：
 
 ```text
-package/NGUInjector-Chinese-compatible-v4.1.7-cn.4.zip
+package/NGUInjector-Chinese-compatible-v4.1.7-cn.5.zip
 ```
 
 SHA-256：
 
 ```text
-e2077ecae5157ab4500f7819386da066edb8d36a85dfa060e63e1813da5a56f3
+02517eded533eae049c3da576f1fde1c11724055ccd61befd64c415f6ef2889c
 ```
 
 ## 使用
 
 1. 启动 NGU IDLE 并进入游戏。
-2. 解压 `NGUInjector-Chinese-compatible-v4.1.7-cn.4.zip` 到全新目录。
+2. 解压 `NGUInjector-Chinese-compatible-v4.1.7-cn.5.zip` 到全新目录。
 3. 运行 `dist/inject.bat`。
 4. 注入成功后按 `F1` 打开中文设置界面。
 
@@ -27,6 +27,8 @@ e2077ecae5157ab4500f7819386da066edb8d36a85dfa060e63e1813da5a56f3
 
 - 设置界面、悬浮层、快速保存/读取提示、本地错误提示改为中文。
 - 将 Augmentation/Augment 相关显示统一译为“挂件”。
+- 修复黄金狙击理论最佳区域未解锁时一直等待的问题，会回退到当前已解锁且可打的最高非泰坦区域。
+- 新增中文使用逻辑说明，覆盖功能优先级、换装锁、黄金管理、钱坑、任务、许愿、卡牌等实际运行逻辑。
 - 区域名称、卡牌稀有度、MacGuffin 类型、动作锁定名称改用汉化术语。
 - 保留内部 JSON 配置键名，兼容原项目配置文件。
 - 解决 Unity/Mono 下 `System.Resources.Extensions.DeserializingResourceReader` 初始化失败问题。
