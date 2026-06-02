@@ -981,7 +981,7 @@ namespace NGUInjector
                         if (LockManager.HasGoldLock() || LockManager.CanSwap())
                         {
                             int zone = ZoneStatHelper.GetBestZone().Zone;
-                            if (zone > _furthestZone)
+                            if (zone > _furthestZone || !CombatManager.IsZoneUnlocked(_furthestZone))
                                 _furthestZone = zone;
 
                             CombatHelpers.IsCurrentlyGoldSniping = true;
@@ -1015,7 +1015,7 @@ namespace NGUInjector
                     if (!Character.buttons.brokenTimeMachine.interactable || Character.challenges.timeMachineChallenge.inChallenge)
                     {
                         int zone = ZoneStatHelper.GetBestZone().Zone;
-                        if (zone > _furthestZone)
+                        if (zone > _furthestZone || !CombatManager.IsZoneUnlocked(_furthestZone))
                             _furthestZone = zone;
 
                         CombatHelpers.IsCurrentlyAdventuring = true; // Not equipping gold loadout

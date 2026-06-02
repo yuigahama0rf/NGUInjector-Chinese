@@ -88,10 +88,21 @@ namespace NGUInjector.Managers
             if (CombatHelpers.UltimateAttackUnlocked() && CombatHelpers.UltimateBuffUnlocked())
                 fightType = 1;
 
-            var finalAvailableZones = availableZones.Where(x => x.Value.FightType(power, toughness) >= fightType).ToDictionary(x => x.Key, x => x.Value);
+            var finalAvailableZones = availableZones
+                .Where(x => x.Value.FightType(power, toughness) >= fightType)
+                .OrderByDescending(x => x.Key)
+                .ToList();
 
-            int bestZoneId = finalAvailableZones.Max(x => x.Key);
-            var zoneStats = finalAvailableZones[bestZoneId];
+            var bestZonePair = finalAvailableZones.First();
+            if (!CombatManager.IsZoneUnlocked(bestZonePair.Key))
+            {
+                var bestUnlockedZonePair = finalAvailableZones.FirstOrDefault(x => CombatManager.IsZoneUnlocked(x.Key));
+                if (bestUnlockedZonePair.Value != null)
+                    bestZonePair = bestUnlockedZonePair;
+            }
+
+            int bestZoneId = bestZonePair.Key;
+            var zoneStats = bestZonePair.Value;
 
             var bestZone = new ZoneTarget
             {
